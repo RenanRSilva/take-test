@@ -1,8 +1,8 @@
-import { AxiosHttpClient } from "../../../src/infra/axios-http-client";
-import { mockAxios, mockHttpResponse } from "../mocks/mock-axios";
-import { mockHttpRequest } from "../../data/mocks/mock-http";
+import { AxiosHttpClient } from '../../../src/infra/axios-http-client'
+import { mockAxios, mockHttpResponse } from '../mocks/mock-axios'
+import { mockHttpRequest } from '../../data/mocks/mock-http'
 
-import axios from "axios";
+import axios from 'axios'
 
 jest.mock('axios')
 
@@ -16,7 +16,7 @@ const makeSut = (): SutTypes => {
   const mockedAxios = mockAxios()
   return {
     sut,
-    mockedAxios
+    mockedAxios,
   }
 }
 
@@ -31,7 +31,7 @@ describe('AxiosHttpClient', () => {
       url: request.url,
       data: request.body,
       headers: request.headers,
-      method: request.method
+      method: request.method,
     })
   })
 
@@ -43,14 +43,14 @@ describe('AxiosHttpClient', () => {
 
     expect(httpResponse).toEqual({
       statusCode: axiosResponse.status,
-      body: axiosResponse.data
+      body: axiosResponse.data,
     })
   })
 
   test('Should return correct error', () => {
     const { sut, mockedAxios } = makeSut()
     mockedAxios.request.mockRejectedValueOnce({
-      response: mockHttpResponse
+      response: mockHttpResponse,
     })
 
     const promise = sut.request(mockHttpRequest())

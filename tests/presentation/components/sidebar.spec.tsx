@@ -1,15 +1,15 @@
-import React from "react";
-import { fireEvent, render, RenderResult } from "@testing-library/react";
+import React from 'react'
+import { fireEvent, render, RenderResult } from '@testing-library/react'
 import '@testing-library/jest-dom'
 
-import {Sidebar} from '../../../src/presentation/components/sidebar/Sidebar'
+import { Sidebar } from '../../../src/presentation/components/sidebar/Sidebar'
 
 let sidebar: RenderResult
 
 describe('sidebar component', () => {
   beforeEach(() => {
     sidebar = render(<Sidebar />)
-  });
+  })
 
   it('show close button when its open', () => {
     expect(sidebar.getByTestId('close-icon')).toBeInTheDocument()

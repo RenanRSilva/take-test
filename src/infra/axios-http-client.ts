@@ -1,4 +1,8 @@
-import { HttpRequest, HttpResponse, HttpClient } from "../data/protocols/http/http-client"
+import {
+  HttpRequest,
+  HttpResponse,
+  HttpClient,
+} from '../data/protocols/http/http-client'
 
 import axios, { AxiosResponse } from 'axios'
 
@@ -10,14 +14,14 @@ export class AxiosHttpClient implements HttpClient {
         url: data.url,
         method: data.method,
         data: data.body,
-        headers: data.headers
+        headers: data.headers,
       })
     } catch (error: any) {
       axiosResponse = error.response
     }
     return {
       statusCode: axiosResponse.status,
-      body: axiosResponse.data
+      body: axiosResponse.data,
     }
   }
 }

@@ -1,14 +1,14 @@
-import { Header } from "../../../src/presentation/components/header/Header";
-import { render, RenderResult } from "@testing-library/react";
+import { Header } from '../../../src/presentation/components/header/Header'
+import { render, RenderResult } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import React from 'react'
 
-let header: RenderResult;
+let header: RenderResult
 
 describe('Header Component', () => {
   beforeEach(() => {
     header = render(<Header />)
-  });
+  })
 
   it('render dryve logo', () => {
     expect(header.getByTestId('dryve-logo')).toBeInTheDocument()
@@ -22,7 +22,7 @@ describe('Header Component', () => {
     expect(header.getByTestId('notification-icon')).toBeInTheDocument()
   })
 
-    it('render notification icon', () => {
+  it('render notification icon', () => {
     expect(header.getByTestId('notification-icon')).toBeInTheDocument()
   })
 

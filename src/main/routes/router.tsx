@@ -3,7 +3,7 @@ import React from 'react'
 
 import { makeVehicles } from '../factories/pages/vehicle-list-factory'
 
-export const Router: React.FC =() => {
+export const Router: React.FC = () => {
   return (
     <BrowserRouter>
       <Switch>

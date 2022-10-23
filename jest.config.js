@@ -17,8 +17,8 @@ module.exports = {
   transform: {
     '.+\\.(ts|tsx)$': 'ts-jest',
   },
-    transformIgnorePatterns: [
-    "[/\\\\]node_modules[/\\\\](?!(@formkit/auto-animate)).+\\.(js|jsx|mjs|cjs|ts|tsx)$"
+  transformIgnorePatterns: [
+    '[/\\\\]node_modules[/\\\\](?!(@formkit/auto-animate)).+\\.(js|jsx|mjs|cjs|ts|tsx)$',
   ],
 
   moduleNameMapper: {
@@ -28,4 +28,4 @@ module.exports = {
       '<rootDir>/src/main/scripts/assetsTransformer.ts',
     '\\.(css|less)$': '<rootDir>/src/main/scripts/assetsTransformer.ts',
   },
-};
+}

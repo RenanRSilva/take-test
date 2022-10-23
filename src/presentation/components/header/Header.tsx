@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import dryveLogo from '../../icons/header/DryveLogo.svg'
 import homeIcon from '../../icons/header/HomeIcon.svg'
 import notificationIcon from '../../icons/header/NotificationIcon.svg'
@@ -21,15 +21,15 @@ export const Header: React.FC = () => {
       </div>
       <div className={styles.header_account}>
         <button>
-          <img  data-testid="notification-icon" src={notificationIcon} alt="" />
+          <img data-testid="notification-icon" src={notificationIcon} alt="" />
         </button>
         <button>
           <img data-testid="settings-icon" src={settingsIcon} alt="" />
         </button>
         <button>
-        <div className={styles.header_account_profile_pic}>
-          <img src={profilePic} alt="" />
-        </div>
+          <div className={styles.header_account_profile_pic}>
+            <img src={profilePic} alt="" />
+          </div>
         </button>
       </div>
     </header>

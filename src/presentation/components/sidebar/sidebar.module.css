@@ -1,7 +1,7 @@
 .sidebar {
   border-right: 2px solid rgba(128, 128, 128, 0.26);
   min-height: 100vh;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 20px 20px 20px 20px;
   display: flex;
   justify-content: space-between;
@@ -10,7 +10,7 @@
   flex-flow: column;
 }
 
-.sidebar nav ul  {
+.sidebar nav ul {
   margin-top: 0;
   padding: 0;
 }
@@ -31,11 +31,11 @@
   height: 40px;
 }
 
-.open nav ul li img{
+.open nav ul li img {
   margin-right: 10px;
 }
 
- .closed nav ul li {
+.closed nav ul li {
   display: flex;
   align-items: center;
   font-family: 'Inter';
@@ -46,7 +46,6 @@
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 8px;
-
 }
 
 .sidebar nav ul li:hover:not(.selected) {
@@ -55,7 +54,7 @@
 }
 
 .selected {
-  background-color: #0065FF;
+  background-color: #0065ff;
   color: white;
 }
 

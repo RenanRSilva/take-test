@@ -3,7 +3,7 @@ import { faker } from '@faker-js/faker'
 
 export const mockHttpResponse = (): any => ({
   data: { data: 'data', random: 'random' },
-  status: faker.datatype.number()
+  status: faker.datatype.number(),
 })
 
 export const mockAxios = (): jest.Mocked<typeof axios> => {
