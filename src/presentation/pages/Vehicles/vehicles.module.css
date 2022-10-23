@@ -5,5 +5,5 @@
 .vehicles_section {
   display: flex;
   flex-direction: column;
-  width: 74%;
+  width: 100%;
 }

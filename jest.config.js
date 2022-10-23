@@ -17,6 +17,10 @@ module.exports = {
   transform: {
     '.+\\.(ts|tsx)$': 'ts-jest',
   },
+    transformIgnorePatterns: [
+    "[/\\\\]node_modules[/\\\\](?!(@formkit/auto-animate)).+\\.(js|jsx|mjs|cjs|ts|tsx)$"
+  ],
+
   moduleNameMapper: {
     '@/(.*)': '<rootDir>/src/$1',
     '\\.scss$': 'identity-obj-proxy',
