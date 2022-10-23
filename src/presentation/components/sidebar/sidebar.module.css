@@ -1,0 +1,38 @@
+.sidebar {
+  border-right: 2px solid rgba(128, 128, 128, 0.26);
+  width: 400px;
+  height: 95vh;
+}
+
+.sidebar nav ul  {
+  margin-top: 0;
+}
+
+.sidebar nav ul li {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 320px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.sidebar nav ul li:hover:not(.selected) {
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.sidebar nav ul li img {
+  margin-right: 10px;
+}
+
+.selected {
+  background-color: #0065FF;
+  color: white;
+}
