@@ -1,0 +1,17 @@
+.vehicles_table {
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.589);
+  border-radius: 8px;
+  margin: 0px 20px 20px 20px;
+}
+
+.vehicles_table thead tr td {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14px;
+  color: #A3A3A3;
+  padding: 16px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+}

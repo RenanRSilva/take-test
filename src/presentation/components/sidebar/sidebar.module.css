@@ -1,12 +1,13 @@
 .sidebar {
   border-right: 2px solid rgba(128, 128, 128, 0.26);
-  height: 88vh;
+  min-height: 100vh;
   background-color: #FFFFFF;
   padding: 20px 20px 20px 20px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-end;
+  flex-flow: column;
 }
 
 .sidebar nav ul  {
@@ -34,7 +35,6 @@
   margin-right: 10px;
 }
 
-
  .closed nav ul li {
   display: flex;
   align-items: center;
@@ -45,9 +45,8 @@
   list-style: none;
   border-radius: 10px;
   margin-bottom: 20px;
-  margin-top: 5px;
-  padding: 5px;
-  height: 40px;
+  padding: 8px;
+
 }
 
 .sidebar nav ul li:hover:not(.selected) {
