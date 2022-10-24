@@ -26,16 +26,16 @@ export const Vehicle: React.FC<Props> = ({
   return (
     <tr className={styles.vehicle_row}>
       <td className={styles.vehicle_info}>
-        <img width={120} src={`${picture}`} alt="" />
+        <img data-testid="vehicle-image" width={120} src={`${picture}`} alt="" />
         <div>
-          <h2>{modelName}</h2>
-          <p>{name}</p>
-          <p>
+          <h2 data-testid="model-name">{modelName}</h2>
+          <p data-testid="vehicle-name">{name}</p>
+          <p data-testid="vehicle-year">
             {manufacturingYear}/{modelYear} - {fuel}
           </p>
-          <p>
+          <p data-testid="vehicle-mileage">
             {mileage} -{' '}
-            <span className={styles.vehicle_price}>
+            <span data-testid="vehicle-price" className={styles.vehicle_price}>
               {' '}
               {price.toLocaleString('pt-br', {
                 style: 'currency',

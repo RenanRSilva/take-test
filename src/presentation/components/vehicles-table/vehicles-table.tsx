@@ -11,7 +11,7 @@ type Props = {
 export const VehiclesTable: React.FC<Props> = ({ vehicleList }) => {
   return (
     <table className={styles.vehicles_table}>
-      <thead>
+      <thead data-testid="table-head">
         <tr>
           <td>Dados do veículo</td>
           <td>Ref</td>
@@ -22,6 +22,7 @@ export const VehiclesTable: React.FC<Props> = ({ vehicleList }) => {
       <tbody>
         {vehicleList.map((vehicle) => (
           <Vehicle
+            key={vehicle.vehicle_uuid}
             name={vehicle.name}
             modelName={vehicle.model_name}
             modelYear={vehicle.model_year}
