@@ -6,7 +6,7 @@ export class RemoteLoadVehicleList implements LoadVehicleList {
   constructor(
     private readonly url: string,
     private readonly httpClient: HttpClient<RemoteLoadVehicleList.Model[]>
-  ) {}
+  ) { }
 
   async load(): Promise<LoadVehicleList.Model[]> {
     const httpResponse = await this.httpClient.request({
