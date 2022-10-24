@@ -2,42 +2,41 @@ import React from 'react'
 import {  render, RenderResult } from '@testing-library/react'
 import '@testing-library/jest-dom'
 
-import { mockVehicles } from './mocks/mock-vehicles'
+import { mockVehiclesList } from '../../data/mocks/mock-vehicles'
 import {VehiclesTable} from '../../../src/presentation/components/vehicles-table/vehicles-table'
 
 let vehiclesTable: RenderResult
 
 describe('vehicles table component', () => {
   beforeEach(() => {
-    vehiclesTable = render(<VehiclesTable vehicleList={mockVehicles} />)
+    vehiclesTable = render(<VehiclesTable vehicleList={mockVehiclesList()} />)
   })
 
   it('show vehicle image', () => {
-    expect(vehiclesTable.queryByTestId('vehicle-image')).toBeInTheDocument()
+    expect(vehiclesTable.queryAllByTestId('vehicle-image')).toHaveLength(3)
   })
 
   it('show vehicle model name', () => {
-    expect(vehiclesTable.queryByTestId('model-name')).toBeInTheDocument()
+    expect(vehiclesTable.queryAllByTestId('model-name')).toHaveLength(3)
   })
 
   it('show vehicle name', () => {
-    expect(vehiclesTable.queryByTestId('vehicle-name')).toBeInTheDocument()
+    expect(vehiclesTable.queryAllByTestId('vehicle-name')).toHaveLength(3)
   })
 
   it('show vehicle year', () => {
-    expect(vehiclesTable.queryByTestId('vehicle-year')).toBeInTheDocument()
+    expect(vehiclesTable.queryAllByTestId('vehicle-year')).toHaveLength(3)
   })
 
   it('show vehicle mileage', () => {
-    expect(vehiclesTable.queryByTestId('vehicle-mileage')).toBeInTheDocument()
+    expect(vehiclesTable.queryAllByTestId('vehicle-mileage')).toHaveLength(3)
   })
 
   it('show vehicle price', () => {
-    expect(vehiclesTable.queryByTestId('vehicle-price')).toBeInTheDocument()
+    expect(vehiclesTable.queryAllByTestId('vehicle-price')).toHaveLength(3)
   })
 
   it('show table head', () => {
-        expect(vehiclesTable.queryByTestId('table-head')).toBeInTheDocument()
-
+    expect(vehiclesTable.getByTestId('table-head')).toBeInTheDocument()
   })
 })
