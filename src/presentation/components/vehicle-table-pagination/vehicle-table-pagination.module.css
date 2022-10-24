@@ -1,0 +1,63 @@
+.vehicle_table_pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 20px 20px 20px;
+  background-color: white;
+  align-items: center;
+  border-radius: 0px 0px 8px 8px;
+  padding: 20px;
+}
+
+.vehicle_table_pagination button {
+  background: none;
+  border: 1px solid rgba(180, 179, 179, 0.486);
+  margin-right: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 9px 10px 9px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.vehicle_table_pagination select {
+  background: none;
+  border: 1px solid rgba(128, 128, 128, 0.589);
+  margin-right: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.inline {
+  display: inline;
+}
+
+.arrow {
+  display: inline;
+  color: #0065ff;
+  cursor: pointer;
+}
+
+.results {
+  display: inline;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #a3a3a3;
+}
+
+.selected {
+  background-color: #0065ff !important;
+  color: white;
+}
