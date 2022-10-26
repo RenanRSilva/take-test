@@ -9,7 +9,7 @@ npm install
 ### Create a .env file by copying the existing one:
 
 ```bash
-cp cp .env.sample .env
+cp .env.sample .env
 ```
 
 ### Set the value of REACT_APP_BASE_URL pointing to back-end API mock
