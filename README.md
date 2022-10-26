@@ -1,4 +1,4 @@
-# Setupping project
+# Starting the application
 
 ### Install Dependencies
 
