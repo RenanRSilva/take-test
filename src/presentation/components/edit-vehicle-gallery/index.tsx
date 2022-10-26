@@ -12,7 +12,6 @@ export const VehicleGallery: React.FC = () => {
    return (
       <>
          <SectionTitle sectionTitle="Fotos do veículo" />
-
          <div className={styles.gallery_container}>
             <aside className={styles.vehicle_gallery}>
                <div className={styles.add_photos}>
