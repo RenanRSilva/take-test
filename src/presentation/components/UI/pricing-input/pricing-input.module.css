@@ -1,0 +1,44 @@
+.input_container {
+   display: flex;
+   width: 100%;
+   padding: 0px 5px 0px 5px;
+}
+
+.input {
+   position: relative;
+   width: 100%;
+   margin: 0;
+   line-height: 14px;
+}
+
+.input > label {
+   position: absolute;
+   top: 0.2ex;
+   z-index: 1;
+   left: 2em;
+   background-color: white;
+   padding: 0 5px;
+   color: #a0a0a0;
+   font-weight: 500;
+   font-size: 10px;
+   line-height: 10px;
+}
+
+.input > input {
+   border: 1px solid #a0a0a0;
+   border-radius: 6px;
+   position: relative;
+   margin: 10px 0px 10px 0px;
+   line-height: 4ex;
+   background: none;
+   padding: 14px 0px 14px 8px;
+   font-weight: 400;
+   font-size: 14px;
+   letter-spacing: -0.025em;
+   line-height: 14px;
+   width: 98%;
+}
+
+.input > input::placeholder {
+   color: #1d2c4b;
+}

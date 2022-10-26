@@ -1,61 +1,62 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100%;
-  padding: 10px 10px 10px 20px;
-  border-bottom: 2px solid rgba(128, 128, 128, 0.26);
-  background-color: #ffffff;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   border-bottom: 2px solid rgba(128, 128, 128, 0.26);
+   background-color: #ffffff;
 }
 
 .header button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  margin: 0px 10px 0px 10px;
+   background: none;
+   border: none;
+   cursor: pointer;
+   margin: 0px 5px 0px 5px;
 }
 
 .header button:hover {
-  transform: scale(1.1);
-  animation-duration: 2000ms;
+   transform: scale(1.05);
+   animation-duration: 5000ms;
 }
 
 .header_city {
-  display: flex;
-  align-items: center;
+   display: flex;
+   align-items: center;
+   padding-left: 20px;
 }
 
 .header_city select {
-  background: none;
-  border: none;
-  font-family: 'Inter';
-  font-weight: 500;
-  cursor: pointer;
-  font-size: 14px;
+   background: none;
+   border: none;
+   font-family: 'Inter';
+   font-weight: 500;
+   cursor: pointer;
+   font-size: 14px;
 }
 
 .header_account {
-  display: flex;
-  align-items: center;
+   display: flex;
+   align-items: center;
+   padding-right: 20px;
 }
 
 .header_account_profile_pic {
-  border-radius: 100%;
+   border-radius: 100%;
 }
 
 .header_account_profile_pic:hover {
-  transform: scale(1.1);
-  animation-duration: 2000ms;
+   transform: scale(1.1);
+   animation-duration: 2000ms;
 }
 
 .header_account_profile_pic img {
-  width: 44px;
-  border: 2px solid #0065ff;
-  border-radius: 100%;
-  padding: 2px;
+   width: 36px;
+   border: 2px solid #0065ff;
+   border-radius: 100%;
+   padding: 2px;
 }
 
 .header_icon_button {
-  background: none;
-  border: none;
+   background: none;
+   border: none;
 }

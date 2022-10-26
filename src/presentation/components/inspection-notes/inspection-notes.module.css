@@ -1,0 +1,17 @@
+.inspection_img {
+   width: 70%;
+}
+.vehicle_info_subtitle {
+   border-bottom: 1px solid #a0a0a0;
+   padding-bottom: 5px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 100%;
+}
+
+@media (max-width: 1500px) {
+   .inspection_img {
+      width: 90%;
+   }
+}

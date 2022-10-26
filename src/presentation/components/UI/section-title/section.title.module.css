@@ -1,0 +1,17 @@
+.section_title_container {
+   border: 1px 1px 0px 1px solid #efefef;
+   border-radius: 8px 8px 0px 0px;
+   background-color: #ffffff;
+   display: flex;
+   padding: 5px 20px;
+}
+
+.section_title_container h2 {
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 100%;
+   letter-spacing: -0.025em;
+   color: #1d2c4b;
+}

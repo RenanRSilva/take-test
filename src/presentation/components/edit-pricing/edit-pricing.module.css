@@ -1,0 +1,80 @@
+.pricing_container {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 40px;
+   align-items: center;
+   width: 95%;
+   padding-left: 8px;
+   padding-right: 8px;
+}
+
+.pricing {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+}
+
+.kbb_pricing {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   background: #36b37e;
+   border: 1px solid #d1d1d1;
+   border-bottom: none;
+   border-radius: 6px 6px 0px 0px;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 14px;
+   color: #ffffff;
+   width: 100%;
+   margin-bottom: 0;
+   justify-content: center;
+   margin-left: 5px;
+   margin-top: 4px;
+}
+
+.particular_price {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   background: #d1d1d1;
+   border: 1px solid #d1d1d1;
+   background-color: #ffffff;
+   border-radius: 0px 0px 6px 6px;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 14px;
+   width: 100%;
+   color: #1d2c4b;
+   margin: 0px 0px 7px 5px;
+   align-items: center;
+   justify-content: center;
+   height: 55px;
+}
+
+.kbb_pricing p,
+.particular_price p {
+   margin: 0px 3px 3px 3px;
+   margin: 2px 0px;
+   text-align: center;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 12px;
+   text-align: center;
+   letter-spacing: -0.025em;
+}
+
+.kbb_pricing strong,
+.particular_price strong {
+   font-weight: 600;
+   font-size: 14px;
+   text-align: center;
+   letter-spacing: -0.025em;
+   margin-bottom: 2px;
+   line-height: 17px;
+}

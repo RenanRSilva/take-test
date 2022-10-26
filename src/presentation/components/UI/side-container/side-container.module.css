@@ -1,0 +1,10 @@
+.side_container {
+   padding: 10px;
+   border: 1px solid #efefef;
+   border-radius: 0px 0px 8px 8px;
+   background-color: #ffff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}

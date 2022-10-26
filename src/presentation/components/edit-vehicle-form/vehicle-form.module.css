@@ -1,0 +1,87 @@
+.container {
+   width: 97%;
+   padding: 5px;
+}
+.container h2 {
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 16px;
+   color: #0065ff;
+   letter-spacing: -0.025em;
+   padding-left: 8px;
+}
+
+.mid_row {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: start;
+   width: 54%;
+}
+
+.small_row {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   width: 50%;
+}
+.plaque_row {
+   display: flex;
+   flex-direction: row;
+   align-items: start;
+   width: 35%;
+   margin-right: 5px;
+}
+
+.row {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+}
+
+.vehicle_state {
+   margin: 5px 5px;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 14px;
+}
+
+.vehicle_state > input {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 14px;
+   margin: 10px 5px 10px 0px;
+}
+
+.vehicle_state > label {
+   margin-right: 15px;
+}
+
+.form_navigation ul {
+   display: flex;
+   list-style: none;
+   padding-left: 0;
+   border-bottom: 1px solid #efefef;
+   padding-left: 8px;
+}
+
+.form_navigation ul li {
+   margin-right: 30px;
+   color: #a3a3a3;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 100%;
+   cursor: pointer;
+}
+
+.form_navigation .selected {
+   border-bottom: 3px solid #0065ff;
+   padding-bottom: 10px;
+   color: #0065ff;
+}

@@ -1,87 +1,96 @@
-.vehicles_navigation {
-  display: flex;
-  padding: 20px 0px 20px 20px;
-  background-color: #e5e5e5;
-  align-items: center;
-  width: 95%;
-  height: 75px;
-  justify-content: space-between;
-  flex-direction: row;
+.navigation {
+   display: flex;
+   padding: 20px 0px 20px 20px;
+   background-color: #e5e5e5;
+   align-items: center;
+   width: 97%;
+   height: 75px;
+   justify-content: space-between;
+   flex-direction: row;
 }
 
-.vehicles_search_bar {
-  display: flex;
-  align-items: center;
-  font-size: 24px;
-  font-weight: 600;
+.search_bar {
+   display: flex;
+   align-items: center;
+   font-size: 24px;
+   font-weight: 600;
 }
 
-.vehicles_search_bar input {
-  padding-right: 25px;
-  background-image: url('../../icons/searchbar/Magnify.png') no-repeat right;
-  background-size: 20px;
-  border: 1px solid #d1d1d1;
-  border-radius: 6px;
-  padding: 10px;
-  width: 275px;
-  font-size: 14px;
-  margin-left: 10px;
-  position: relative;
+.search_bar h1 {
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 130%;
+   letter-spacing: -0.025em;
+   color: #1d2c4b;
 }
 
-.vehicles_search_bar::after {
-  content: url('../../icons/searchbar/Magnify.png');
-  left: 700px;
-  position: absolute;
-  z-index: 999;
+.title h1 {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 130%;
 }
 
-.vehicles_filter_button {
-  display: flex;
-  box-sizing: border-box;
-  align-items: center;
-  padding: 8px 16px;
-  gap: 8px;
-  width: 100px;
-  height: 38px;
-  background: #ffffff;
-  border: 1px solid #cce8fe;
-  border-radius: 6px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  color: #0065ff;
-  margin-right: 10px;
-  cursor: pointer;
+.search_bar input {
+   background-color: white !important;
+   background: url('../../icons/searchbar/Magnify.png') no-repeat scroll 255px
+      7px;
+   background-size: 20px;
+   border: 1px solid #d1d1d1;
+   border-radius: 6px;
+   padding: 10px;
+   width: 275px;
+   font-size: 14px;
+   margin-left: 10px;
+   position: relative;
 }
 
-.vehicles_add_button {
-  border: none;
-  align-items: center;
-  padding: 8px 16px;
-  gap: 8px;
-  width: 124px;
-  height: 38px;
-  background: #0065ff;
-  border-radius: 6px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  color: white;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 14px;
-  cursor: pointer;
+.filter_button {
+   display: flex;
+   box-sizing: border-box;
+   align-items: center;
+   padding: 8px 16px;
+   gap: 8px;
+   width: 100px;
+   height: 38px;
+   background: #ffffff;
+   border: 1px solid #cce8fe;
+   border-radius: 6px;
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   color: #0065ff;
+   margin-right: 10px;
+   cursor: pointer;
 }
 
-.vehicles_buttons {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.add_button {
+   border: none;
+   align-items: center;
+   padding: 8px 16px;
+   width: 124px;
+   height: 38px;
+   background: #0065ff;
+   border-radius: 6px;
+   order: 1;
+   flex-grow: 0;
+   color: white;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 14px;
+   cursor: pointer;
+   display: flex;
+}
+
+.buttons {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
 }

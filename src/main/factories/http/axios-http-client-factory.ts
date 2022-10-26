@@ -1,3 +1,3 @@
-import { AxiosHttpClient } from '../../../infra/axios-http-client'
+import { AxiosHttpClient } from '../../../infra/axios-http-client';
 
-export const makeAxiosHttpClient = (): AxiosHttpClient => new AxiosHttpClient()
+export const makeAxiosHttpClient = (): AxiosHttpClient => new AxiosHttpClient();

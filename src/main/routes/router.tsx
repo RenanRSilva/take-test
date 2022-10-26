@@ -1,14 +1,19 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import React from 'react'
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import { makeVehicles } from '../factories/pages/vehicle-list-factory'
+import { Vehicles } from '../../presentation/pages/vehicles/';
+import { EditVehicle } from '../../presentation/pages/edit-vehicle/';
+import { VehiclesProvider } from '../factories/context/context';
 
 export const Router: React.FC = () => {
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" exact component={makeVehicles} />
-      </Switch>
-    </BrowserRouter>
-  )
-}
+   return (
+      <VehiclesProvider>
+         <BrowserRouter>
+            <Switch>
+               <Route path="/" exact component={Vehicles} />
+               <Route path="/edit-vehicle" exact component={EditVehicle} />
+            </Switch>
+         </BrowserRouter>
+      </VehiclesProvider>
+   );
+};

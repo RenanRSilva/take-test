@@ -1,0 +1,64 @@
+.container {
+   display: grid;
+   padding: 20px;
+   gap: 1rem;
+   grid-template-rows: 50px 0.8fr 1fr 0.4fr;
+   grid-template-columns: 3fr 3fr;
+   grid-template-areas:
+      'nav nav'
+      'content1 content2'
+      'content1 content3'
+      'content1 content4';
+}
+
+.title h1 {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 130%;
+}
+
+@media (max-width: 1400px) {
+   .container {
+      max-width: 1200px;
+   }
+}
+
+@media (max-width: 1113px) {
+   .container {
+      grid-template-rows: 50px 1fr 0.4fr 0.4fr;
+
+      grid-template-columns: 1fr;
+      grid-template-areas:
+         'nav'
+         'content1'
+         'content2'
+         'content3'
+         'content4';
+   }
+}
+
+.information_section {
+   grid-area: content1;
+}
+
+.inspection_notes_section {
+   grid-area: content2;
+}
+
+.vehicle_gallery_section {
+   grid-area: content3;
+}
+
+.linked_contacts {
+   grid-area: content4;
+}
+
+.nav {
+   grid-area: nav;
+}
+
+.link {
+   text-decoration: none;
+   color: #0065ff;
+   margin-right: 10px;
+}

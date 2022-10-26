@@ -1,0 +1,40 @@
+.contact {
+   display: flex;
+   margin-left: 10px;
+   margin-bottom: 10px;
+   padding: 10px 0px 10px 10px;
+}
+
+.contact p {
+   display: flex;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 12px;
+   color: #666666;
+}
+
+.contact h4 {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 14px;
+   margin-top: 3px;
+   margin-bottom: 3px;
+   letter-spacing: -0.025em;
+   color: #1d2c4b;
+}
+
+.pic {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 64px;
+   height: 64px;
+   background: #eaf9ff;
+   border: 2px solid #0065ff;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 20px;
+   color: #0065ff;
+   border-radius: 100%;
+   margin-right: 15px;
+}
