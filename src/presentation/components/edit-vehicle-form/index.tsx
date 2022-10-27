@@ -44,7 +44,7 @@ export const VehicleInformationForm: React.FC = () => {
          </div>
          <div className={styles.row}>
             <div className={styles.mid_row}>
-               <Select label="Carroceria" currentValue="Hatch" />
+               <Select label="Carroceria" currentValue="Hatch/Sedan" />
             </div>
             <div className={styles.mid_row}>
                <div className={styles.mid_row}>

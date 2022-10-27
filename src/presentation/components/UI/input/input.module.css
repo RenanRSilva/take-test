@@ -25,18 +25,18 @@
 }
 
 .input > input {
-   border: 1px solid #a0a0a0;
+   border: 1px solid #D1D1D1;
    border-radius: 6px;
    position: relative;
-   margin: 10px 0px 10px 0px;
+   margin: 10px 10px 10px 0px;
    line-height: 4ex;
    background: none;
-   padding: 8px 0px 8px 8px;
+   padding: 15px 5px 15px 8px;
    font-weight: 400;
    font-size: 14px;
    letter-spacing: -0.025em;
    line-height: 14px;
-   width: 98%;
+   width: 96%;
 }
 
 .input > input::placeholder {

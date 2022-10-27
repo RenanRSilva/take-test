@@ -2,7 +2,6 @@ import React from 'react';
 
 import { carImages } from '../../../presentation/images/car-images';
 import { SectionTitle } from '../UI/section-title/';
-import { SideContainer } from '../UI/side-container';
 
 import addIcon from '../../icons/edit-vehicle/plus-sign.svg';
 

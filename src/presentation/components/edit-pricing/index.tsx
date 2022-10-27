@@ -19,13 +19,15 @@ export const EditPricing: React.FC<Props> = ({ vehiclePrice }) => {
                   currency: 'BRL',
                })}
             />
-            <div className={styles.kbb_pricing}>
-               <p>Faixa de preço KBB &trade;</p>
-               <p>
-                  <strong data-testid="price-range-kbb">
-                     R$ 65.298 - R$ 69.298
-                  </strong>
-               </p>
+            <div className={styles.kbb_pricing_container}>
+               <div className={styles.kbb_pricing}>
+                  <p>Faixa de preço KBB &trade;</p>
+                  <p>
+                     <strong data-testid="price-range-kbb">
+                        R$ 65.298 - R$ 69.298
+                     </strong>
+                  </p>
+               </div>
             </div>
          </div>
          <div className={styles.pricing}>
@@ -36,13 +38,15 @@ export const EditPricing: React.FC<Props> = ({ vehiclePrice }) => {
                   currency: 'BRL',
                })}
             />
-            <div className={styles.particular_price}>
-               <p>Preço para Particular</p>
-               <p>
-                  <strong data-testid="price-for-private">
-                     R$ 65.298 - R$ 69.298
-                  </strong>
-               </p>
+            <div className={styles.private_pricing_container }>
+               <div className={styles.particular_price}>
+                  <p>Preço para Particular</p>
+                  <p>
+                     <strong data-testid="price-for-private">
+                        R$ 65.298 - R$ 69.298
+                     </strong>
+                  </p>
+               </div>
             </div>
          </div>
       </div>

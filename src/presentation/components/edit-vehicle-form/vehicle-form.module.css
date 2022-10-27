@@ -1,5 +1,5 @@
 .container {
-   width: 97%;
+   width: 95%;
    padding: 5px;
 }
 .container h2 {
@@ -11,6 +11,20 @@
    letter-spacing: -0.025em;
    padding-left: 8px;
 }
+
+
+.vehicle_state > input {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 14px;
+   margin: 10px 5px 10px 0px;
+}
+
+.vehicle_state > label {
+   margin-right: 15px;
+}
+
 
 .mid_row {
    display: flex;
@@ -48,18 +62,6 @@
    font-weight: 400;
    font-size: 14px;
    line-height: 14px;
-}
-
-.vehicle_state > input {
-   font-style: normal;
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 14px;
-   margin: 10px 5px 10px 0px;
-}
-
-.vehicle_state > label {
-   margin-right: 15px;
 }
 
 .form_navigation ul {

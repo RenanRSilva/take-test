@@ -8,6 +8,7 @@
 
 .tags {
    display: flex;
+   padding-left: 8px;
 }
 
 .tag {
