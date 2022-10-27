@@ -12,7 +12,6 @@
    padding-left: 8px;
 }
 
-
 .vehicle_state > input {
    font-style: normal;
    font-weight: 400;
@@ -24,7 +23,6 @@
 .vehicle_state > label {
    margin-right: 15px;
 }
-
 
 .mid_row {
    display: flex;

@@ -5,6 +5,7 @@ import { SectionTitle } from '../UI/section-title';
 import { VehicleInformationForm } from '../edit-vehicle-form/';
 
 import styles from './edit-vehicle.module.css';
+import { SaveVehicle } from '../UI/save-vehicle';
 
 export const EditVehicleInfo: React.FC = () => {
    return (
@@ -26,9 +27,7 @@ export const EditVehicleInfo: React.FC = () => {
                <VehicleInformationForm />
             </div>
          </Container>
-         <div className={styles.save_button_area}>
-            <button data-testid="save-button">Salvar</button>
-         </div>
+         <SaveVehicle />
       </>
    );
 };

@@ -38,7 +38,7 @@ export const EditPricing: React.FC<Props> = ({ vehiclePrice }) => {
                   currency: 'BRL',
                })}
             />
-            <div className={styles.private_pricing_container }>
+            <div className={styles.private_pricing_container}>
                <div className={styles.particular_price}>
                   <p>Preço para Particular</p>
                   <p>
