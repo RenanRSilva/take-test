@@ -4,16 +4,18 @@ import React from 'react';
 
 import { Contact } from '../../../src/presentation/components/contact';
 let contact: RenderResult;
-import { contacts } from '../../data/mocks/mock-contact';
+import { mockContact } from '../../data/mocks/mock-contact';
 
 describe('contact component', () => {
    beforeEach(() => {
+      const mockedContact = mockContact()
+
       contact = render(
          <Contact
-            firstLetters={contacts[0].name}
-            name={contacts[0].name}
-            email={contacts[0].email}
-            phoneNumber={contacts[0].phoneNumber}
+            firstLetters={mockedContact.name}
+            name={mockedContact.name}
+            email={mockedContact.email}
+            phoneNumber={mockedContact.phoneNumber}
          />
       );
    });
